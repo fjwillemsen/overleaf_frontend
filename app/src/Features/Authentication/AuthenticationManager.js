@@ -1,7 +1,7 @@
 const Settings = require('@overleaf/settings')
 const { User } = require('../../models/User')
 const { db, ObjectId } = require('../../infrastructure/mongodb')
-const bcrypt = require('bcrypt')
+const bcrypt = require('bcryptjs')
 const EmailHelper = require('../Helpers/EmailHelper')
 const {
   InvalidEmailError,
